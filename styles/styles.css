@@ -5,7 +5,6 @@
 *::before,
 *::after {
   box-sizing: border-box;
-  transition: 1s;
 }
 
 a {
@@ -28,16 +27,6 @@ body {
   background-color: white;
   padding: 10px 0px;
   z-index: 1;
-  border-bottom: 2px solid #f3f3f4;
-}
-
-.h-bar::after {
-  content: '';
-  display: block;
-  bottom: -20px;
-  left: 0;
-  right: 0;
-  position: absolute;
   border-bottom: 2px solid #f3f3f4;
 }
 
@@ -143,7 +132,13 @@ body {
   background: -webkit-linear-gradient(90deg, rgba(34,193,195,1) 0%, rgba(80,200,120,1) 100%);
   color: white;
   font-weight: 600;
+  transition: 0.5s;
 }
+
+.main-button:hover{
+    background: -webkit-linear-gradient(90deg, rgba(80,200,120,1)  0%, rgba(34,193,195,1) 100%);
+}
+
 .call-action{
   padding: 10px 0px;
   margin-top: 20px;
@@ -161,13 +156,24 @@ body {
   background-color: white;
   color: rgba(80,200,120,0.7);
   font-weight: 600;
+  transition: 0.5s;
 }
 
 .a-two{
-  border: 1px solid rgba(80,200,120,0.5);
+  border: 1px solid rgba(34,193,195,1);
   background: -webkit-linear-gradient(90deg, rgba(34,193,195,1) 0%, rgba(80,200,120,1) 100%);
   color: white;
   font-weight: 600;
+  transition: 0.5s;
+}
+
+.a-two:hover{
+  background: -webkit-linear-gradient(90deg, rgba(80,200,120,1)  0%, rgba(34,193,195,1) 100%);
+}
+
+.a-one:hover{
+  background-color: rgba(80,200,120,0.5);
+  color: white;
 }
 
 
@@ -282,6 +288,9 @@ body {
 .proj-more{
   transition: 2s;
   display: none;
+  transition: opacity 0.5s ease;
+  background-color: transparent;
+  opacity: 0;
 }
 
 .work-example:hover .proj-more{
@@ -294,7 +303,11 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  transition: 2s;
+  opacity: 1;
+  /* background-color: #AD310B;
+  -webkit-transition: background-color 1000ms linear;
+  -ms-transition: background-color 1000ms linear;
+  transition: background-color 1000ms linear; */
 }
 
 .show-button{
