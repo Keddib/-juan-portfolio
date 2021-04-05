@@ -28,6 +28,17 @@ body {
   background-color: white;
   padding: 10px 0px;
   z-index: 1;
+  border-bottom: 2px solid #f3f3f4;
+}
+
+.h-bar::after {
+  content: '';
+  display: block;
+  bottom: -20px;
+  left: 0;
+  right: 0;
+  position: absolute;
+  border-bottom: 2px solid #f3f3f4;
 }
 
 .main{
