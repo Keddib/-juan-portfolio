@@ -185,11 +185,12 @@ body {
   background-image: url('../images/blob_6-6-960.svg');
   background-repeat: no-repeat;
   background-position: center;
-  background-size: contain;
+  background-size: cover;
   display: flex;
   justify-content: center;
   align-items: center;
   /* padding: 100px; */
+  height: 100%;
 }
 
 .my-photo{
@@ -648,11 +649,8 @@ font-size: 18px;
   }
   .h-photo{
     width: 40%;
+    height: 50vh;
     padding: 50px 0;
-
-  }
-  .h-photo img{
-    margin: 80px;
   }
   .services-layout{
     display: flex;
